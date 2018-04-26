@@ -1,0 +1,109 @@
+.header__nav--mobile {
+  height: 80px;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 1;
+}
+
+.header__nav--desktop {
+  display: none;
+}
+
+.header__navlist {
+  visibility: hidden;
+  opacity: 0;
+  list-style-type: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.header__navlist--toggled {
+  opacity: 1;
+  height: 100vh;
+  visibility: visible;
+}
+
+.header__navlist--item {
+  margin-top: 13vh;
+  text-align: center;
+}
+
+.header__logo {
+  margin-left: 24px;
+}
+
+.header__hamburger {
+  height: 50px;
+  width: 45px;
+  position: relative;
+  top: 24px;
+  right: 24px;
+}
+
+.header__hamburger--part {
+  box-sizing: border-box;
+  height: 8px;
+  width: 44px;
+  border: 4px solid #000;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.header__hamburger--part:nth-child(2) {
+  margin: 4px 0;
+}
+
+.header__hamburger--part-toggled:nth-child(1) {
+  -webkit-transform: translateY(12px) rotate(45deg);
+  -moz-transform: translateY(12px) rotate(45deg);
+  -ms-transform: translateY(12px) rotate(45deg);
+  transform: translateY(12px) rotate(45deg);
+}
+
+.header__hamburger--part-toggled:nth-child(2) {
+  width: 0;
+  opacity: 0;
+  -webkit-transform: translateX(24px) rotate(90deg);
+  -moz-transform: translateX(24px) rotate(90deg);
+  -ms-transform: translateX(24px) rotate(90deg);
+  transform: translateX(24px) rotate(90deg);
+}
+
+.header__hamburger--part-toggled:nth-child(3) {
+  -webkit-transform: translateY(-12px) rotate(-45deg);
+  -moz-transform: translateY(-12px) rotate(-45deg);
+  -ms-transform: translateY(-12px) rotate(-45deg);
+  transform: translateY(-12px) rotate(-45deg);
+}
+
+.jumbo__title {
+  margin: 0 30px;
+  position: relative;
+  top: calc(100vh - 150px);
+}
+
+.about__card {
+  margin: 30px;
+  padding: 30px;
+}
+
+.portfolio__title {
+  position: absolute;
+}
+
+.portfolio__img {
+  height: auto;
+  width: 100%;
+}
